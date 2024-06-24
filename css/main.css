@@ -1451,8 +1451,8 @@ footer .footer__container .footer__row .footer__column {
     
 } 
 
-@media (max-width: 320px)  {
+@media (max-width: 370px)  {
     footer h3 {
-        font-size: 15px;
+        font-size: 13px;
     }
 } 
