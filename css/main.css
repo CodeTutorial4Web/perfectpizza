@@ -1366,8 +1366,9 @@ footer .footer__container .footer__row .footer__column {
 }
 
 @media (max-width: 652px) {
-    .menu__container .pizza__container{
-        grid-template-columns: 1fr;
+
+    .menu__container .pizza__container .rating__add_to_cart__container a {
+        font-size: 0px;
     }
 
     footer .footer__container .footer__row .footer__column:nth-child(3) {
@@ -1405,7 +1406,15 @@ footer .footer__container .footer__row .footer__column {
         padding-bottom: 100px;
     }
 
-
+    .menu__container {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .menu__container .pizza__container {
+        padding: 0;
+        overflow: hidden;
+    }
 
     .offers__container .swiper {
         height: 35vh;
@@ -1426,5 +1435,24 @@ footer .footer__container .footer__row .footer__column {
     .bg-img {
         width: 250%;
     }
+
+    #popular .popular__container {
+       gap: 100px; 
+    }
+
+    #popular .pizza-slide {
+        width: 130%;
+        margin-right: 30px;
+    }
+
+    #popular .pizza-slide p {
+        font-size: 10px;
+    }
     
+} 
+
+@media (max-width: 320px)  {
+    footer h3 {
+        font-size: 15px;
+    }
 } 
