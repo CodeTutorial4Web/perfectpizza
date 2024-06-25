@@ -526,7 +526,6 @@ section {
     overflow: hidden;
     width: 150px;
     height: 150px;
-    box-shadow: 0px 0px 20px rgba(255,255,255,0.7);
     z-index: 1;
     cursor: pointer;
 }
@@ -1412,7 +1411,7 @@ footer .footer__container .footer__row .footer__column {
     }
     
     .menu__container .pizza__container {
-        padding: 0;
+        padding: 50px 15px;
         overflow: hidden;
     }
 
@@ -1448,11 +1447,45 @@ footer .footer__container .footer__row .footer__column {
     #popular .pizza-slide p {
         font-size: 10px;
     }
+
+    .hero .content {
+        width: 90%;
+        gap: 0;
+    }
+
+
+    #home h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    #home .content span {
+        font-size: 15px;
+        margin: 0;
+        line-height: 2px;
+    }
+
+    #home p {
+        font-size: 13px;
+        margin-top: 0;
+    }
+
+    .parallax__el2,
+.parallax__el3,
+.parallax__el4 {
+
+    width: 100px;
+    height: 100px;
+}
     
 } 
 
-@media (max-width: 370px)  {
+@media (max-width: 310px)  {
     footer h3 {
+        font-size: 15px;
+    }
+
+    footer a {
         font-size: 13px;
     }
 } 
