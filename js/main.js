@@ -134,28 +134,10 @@ $("a[href^='#']").click((e)=>{
 
 // GREETING
 
+const greeting = document.querySelector('#greeting')
+
 let clock = document.getElementById('time');
 
-function showTime() {
-    let time = new Date(),
-    hours = time.getHours(),
-    minutes = time.getMinutes(),
-    seconds = time.getSeconds();
-
-    hours = hours % 12 || 12;
-
-    const amPm = hours >= 12 ? "AM" : "PM";
-
-    clock.innerHTML = `${hours} : ${addZero(minutes)} : ${addZero(seconds)} ${amPm}` ;
-
-    setTimeout(showTime, 1000)
-        
-}
-
-showTime()
-
-
-// SHOW DATE 
 
 let date = document.getElementById('date');
 
@@ -164,16 +146,18 @@ function showTime() {
     hours = time.getHours(),
     mins = time.getMinutes(),
     seconds = time.getSeconds();
-
+    console.log(hours);
     
 
-    if(hours >= 12 && hours < 18) {
-        $('.content span').text('GOOD AFTERNOON');
-    }else if (hours <= 12) {
-        $('.content span').text('GOOD MORNING');
-    }else if (hours >= 18) {
-        $('.content span').text('GOOD EVENING');
-    }
+    if(hours < 13) {
+        greeting.textContent = 'GOOD MORNING';
+    } else if(hours < 19) {
+        greeting.textContent = 'GOOD AFTERNOON';
+    } else {
+        greeting.textContent = 'GOOD EVENING';
+    };
+
+    setTimeout(showTime, 1000);
 
 }
 
